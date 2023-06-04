@@ -61,6 +61,12 @@ public class Enemy : LivingEntity
         OnDeath += OnEnemyDeath;
         currentState = State.Chasing;
         GameManager.Instance.OnGameOverEvent += GameManager_OnGameOverEvent;
+        GameManager.Instance.OnGamePauseEvent += Instance_OnGamePauseEvent;
+    }
+
+    private void Instance_OnGamePauseEvent(object sender, System.EventArgs e)
+    {
+        targetEntity = null;
     }
 
     private void GameManager_OnGameOverEvent(object sender, System.EventArgs e)
@@ -82,7 +88,7 @@ public class Enemy : LivingEntity
     private void Update()
     {
 
-        if (isGameOver) return;
+        if (isGameOver || GameManager.Instance.IsGamePaused()) return;
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
@@ -180,5 +186,10 @@ public class Enemy : LivingEntity
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnGamePauseEvent -= Instance_OnGamePauseEvent;
+        GameManager.Instance.OnGameOverEvent -= GameManager_OnGameOverEvent;
     }
 }

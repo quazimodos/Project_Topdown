@@ -1,24 +1,21 @@
-﻿/// This class contains the logic associated to the in-game pause popup.
+﻿using Unity.VisualScripting;
+using UnityEngine;
+/// This class contains the logic associated to the in-game pause popup.
 public class PausePopup : Popup
 {
+    protected override void Start()
+    {
+        base.Start();
+        GameManager.Instance.PauseGame(true);
+    }
+
+
     public void OnContinueButtonPressed()
     {
-        //pause edilen şeyler devam edecek.
+        GameManager.Instance.PauseGame(false);
         Close();
     }
 
-    public void OnRestartButtonPressed()
-    {
-        ParentScreen.OpenPopup<ConfirmationPopup>("Popups/ConfirmationPopup", popup =>
-        {
-            popup.SetInfo("Restart game", "Do you really want to restart the game?", () =>
-            {
-                //oyuna restart atılacak.
-                popup.Close();
-                Close();
-            });
-        });
-    }
 
     public void OnQuitButtonPressed()
     {

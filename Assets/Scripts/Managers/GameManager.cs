@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    private bool isGamePaused;
 
     Player player;
     [SerializeField] GameScreen gameScreen;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
 
     public event EventHandler OnGameOverEvent;
+    public event EventHandler OnGamePauseEvent;
     public event EventHandler<OnBeforeSaveEventEventArgs> OnBeforeSaveEvent;
     public event EventHandler<OnGameWonEventEventArgs> OnGameWonEvent;
 
@@ -44,6 +46,18 @@ public class GameManager : MonoBehaviour
         core.OnDeath += OnGameOver;
         spawner.OnGameCompleted += OnGameWon;
         spawner.OnBeforeSave += OnBeforeSave;
+    }
+    public void PauseGame(bool state)
+    {
+        isGamePaused = state;
+        if (state)
+        {
+            OnGamePauseEvent?.Invoke(this, EventArgs.Empty);
+        }
+    }
+    public bool IsGamePaused()
+    {
+        return isGamePaused;
     }
 
     void OnBeforeSave()
