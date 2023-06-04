@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e21ec1e6463b248a0f4e24474afae6, type: 3}
+  m_Name: GunShop
+  m_EditorClassIdentifier: 
+  gunModels:
+  - name: Pistol
+    projectileSize: 1
+    gunVisual: {fileID: 1508934165754910, guid: 68317e2c4c57a6e45be7063240f91cbb, type: 3}
+    price: 0
+    gunSprite: {fileID: -1074156450, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 2
+    damage: 1
+    magazineCapacity: 8
+    reloadTime: 1
+    secBetweenShot: 0.75
+    projectileCount: 1
+    spreadAngle: 0
+  - name: Revolver
+    projectileSize: 1.1
+    gunVisual: {fileID: 1404540613340210, guid: ee2cb268404949a4fbaadcf58acb29c5, type: 3}
+    price: 500
+    gunSprite: {fileID: -370308329, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 2
+    damage: 1.5
+    magazineCapacity: 6
+    reloadTime: 0.75
+    secBetweenShot: 1.2
+    projectileCount: 1
+    spreadAngle: 0
+  - name: Shotgun
+    projectileSize: 1.3
+    gunVisual: {fileID: 1345368308290578, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+    price: 750
+    gunSprite: {fileID: 947814149, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 2
+    damage: 1.7
+    magazineCapacity: 4
+    reloadTime: 2
+    secBetweenShot: 2
+    projectileCount: 4
+    spreadAngle: 30
+  - name: Sniper
+    projectileSize: 3
+    gunVisual: {fileID: 1387354669614330, guid: 0605ab4140367474f95034dcf2790b07, type: 3}
+    price: 1000
+    gunSprite: {fileID: -1288848610, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 2
+    damage: 5
+    magazineCapacity: 5
+    reloadTime: 3.5
+    secBetweenShot: 3
+    projectileCount: 1
+    spreadAngle: 0
+  - name: Submachine Gun
+    projectileSize: 1
+    gunVisual: {fileID: 1521777332593636, guid: 6b7a5fffc38c176409283bbcc18eaa23, type: 3}
+    price: 1250
+    gunSprite: {fileID: 1745493782, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 0
+    damage: 1.2
+    magazineCapacity: 20
+    reloadTime: 1.5
+    secBetweenShot: 0.2
+    projectileCount: 1
+    spreadAngle: 0
+  - name: Rifle 01
+    projectileSize: 1.1
+    gunVisual: {fileID: 1296539039355890, guid: be20da268d490c44c8460e91a7cd3a44, type: 3}
+    price: 1500
+    gunSprite: {fileID: 867413579, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 0
+    damage: 2
+    magazineCapacity: 15
+    reloadTime: 1.5
+    secBetweenShot: 0.2
+    projectileCount: 2
+    spreadAngle: 10
+  - name: Rifle 02
+    projectileSize: 1.2
+    gunVisual: {fileID: 1396424805824408, guid: f68f19ab55ee89d4bb00eaa083ab7849, type: 3}
+    price: 2000
+    gunSprite: {fileID: 1648026166, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 0
+    damage: 2.2
+    magazineCapacity: 20
+    reloadTime: 2
+    secBetweenShot: 0.2
+    projectileCount: 3
+    spreadAngle: 20
+  - name: Rifle 03
+    projectileSize: 1.25
+    gunVisual: {fileID: 1523676449047648, guid: 6745051c9fe818d489695642115ceb0d, type: 3}
+    price: 2500
+    gunSprite: {fileID: -1328784308, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 0
+    damage: 2.5
+    magazineCapacity: 23
+    reloadTime: 2.2
+    secBetweenShot: 0.18
+    projectileCount: 4
+    spreadAngle: 30
+  - name: Rifle 04
+    projectileSize: 1.3
+    gunVisual: {fileID: 1296539039355890, guid: be20da268d490c44c8460e91a7cd3a44, type: 3}
+    price: 3000
+    gunSprite: {fileID: -2110383690, guid: cc760e41447eb9349a7bf30d35330145, type: 3}
+    fireMode: 0
+    damage: 2.5
+    magazineCapacity: 30
+    reloadTime: 1.5
+    secBetweenShot: 0.17
+    projectileCount: 5
+    spreadAngle: 35

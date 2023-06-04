@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e1ae5bff2b6a24e932c63db678e303, type: 3}
+  m_Name: Increase Fire Rate
+  m_EditorClassIdentifier: 
+  cardName: Speedy Bullet
+  description: Increase your gun's fire rate slightly.
+  cardImage: {fileID: 21300000, guid: aae7fc07a38e8ab4ea7fd6364a02d485, type: 3}
+  modifiers:
+  - type: 3
+    multiplier: 0.075

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">163871867109</string>
+  <string name="google_storage_bucket" translatable="false">topdownshooter-504cf.appspot.com</string>
+  <string name="project_id" translatable="false">topdownshooter-504cf</string>
+  <string name="google_api_key" translatable="false">AIzaSyBrUrLT1hqeh_wjk2fvel5Z-9u_wvwBfkM</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBrUrLT1hqeh_wjk2fvel5Z-9u_wvwBfkM</string>
+  <string name="google_app_id" translatable="false">1:163871867109:android:bf9bb2153383800fed940c</string>
+  <string name="default_web_client_id" translatable="false">163871867109-b4n0vqjt60c232aisihi8njofg4p5qo0.apps.googleusercontent.com</string>
+</resources>

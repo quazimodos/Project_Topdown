@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163871867109",
+    "project_id": "topdownshooter-504cf",
+    "storage_bucket": "topdownshooter-504cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163871867109:android:bf9bb2153383800fed940c",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ProjeBeykent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163871867109-b4n0vqjt60c232aisihi8njofg4p5qo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrUrLT1hqeh_wjk2fvel5Z-9u_wvwBfkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163871867109-b4n0vqjt60c232aisihi8njofg4p5qo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
